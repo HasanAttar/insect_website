@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PetLover - Insect Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* .card{
+        max-height: 620px;
+    } */
+        .product-img img {
+            max-width: 100%;
+            /* Set maximum width to 100% of container */
+            height: auto;
+            width: 200px;
+            /* Maintain aspect ratio */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 py-lg-0 px-lg-5"
+                style="background-color: rgb(59, 57, 57);">
+                <a href="#" class="navbar-brand">
+                    <img src="img/logo.png" alt="Logo" width="auto" height="40">
+                </a>
+                <a href="" class="navbar-brand d-block d-lg-none">
+                    <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span
+                            class="text-primary">Insect</span>Protection</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                    <div class="navbar-nav">
+
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#blog" class="nav-item nav-link">Blog</a>
+                        <a href="#Gallery" class="nav-item nav-link">Gallery</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <script>
+
+            document.addEventListener("DOMContentLoaded", function () {
+                var scrollLinks = document.querySelectorAll('.navbar-nav a');
+
+                scrollLinks.forEach(function (scrollLink) {
+                    scrollLink.addEventListener('click', function (event) {
+                        event.preventDefault();
+                        var targetId = this.getAttribute('href').substring(1);
+                        var targetElement = document.getElementById(targetId);
+                        if (targetElement) {
+                            var offsetTop = targetElement.offsetTop;
+                            window.scrollTo({
+                                top: offsetTop,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+            });
+        </script>
+
+        </script>
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0">
+            <div id="header-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-image-overlay"></div>
+                        <img class="w-100" src="img/insect8.jpg" style="height: 600px;" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3">
+                                <h3 class="text-white mb-3 d-none d-sm-block">Explore the Fascinating World of Beetles
+                                </h3>
+                                <h1 class="display-3 text-white mb-3">Care Tips for Your Beetle Buddy</h1>
+                                <h5 class="text-white mb-3 d-none d-sm-block">Learn how to provide proper care and
+                                    habitat for your beetle companion.</h5>
+                                <a style="background-color:  #ED6436;border-color: #ED6436;"
+                                    class="btn btn-google btn btn-lg btn-primary mt-3 mt-md-4 "
+                                    href="https://play.google.com/store/apps/details?id=com.mmt.plantid" target="_blank"
+                                    title="Google Play">Google Play</a>
+
+                                <a href="#" class="btn btn-lg btn-secondary mt-3 mt-md-4 px-4">Learn More</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-image-overlay"></div>
+                        <img class="w-100" src="img/fly.jpg" style="height: 600px;" alt="Image">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3">
+                                <h3 class="text-white mb-3 d-none d-sm-block">Explore the Fascinating World of Insects
+                                </h3>
+                                <h1 class="display-3 text-white mb-3">Insect Discovery Hub</h1>
+                                <h5 class="text-white mb-3 d-none d-sm-block">Embark on an exciting journey to learn
+                                    about the diverse world of insects.</h5>
+                                <a style="background-color:  #ED6436;border-color: #ED6436;"
+                                    class="btn btn-google btn btn-lg btn-primary mt-3 mt-md-4 "
+                                    href="https://play.google.com/store/apps/details?id=com.mmt.plantid" target="_blank"
+                                    title="Google Play">Google Play</a>
+                                <a href="#" class="btn btn-lg btn-secondary mt-3 mt-md-4 px-4">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                    <div class="btn btn-primary rounded" style="width: 45px; height: 45px;">
+                        <span class="carousel-control-prev-icon mb-n2"></span>
+                    </div>
+                </a>
+                <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                    <div class="btn btn-primary rounded" style="width: 45px; height: 45px;">
+                        <span class="carousel-control-next-icon mb-n2"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </header>
+    <!-- Cursel end -->
+    <!-- About Start -->
+    <div class="container py-5 " id="about">
+        <div class="row py-5 align-items-center">
+            <div class="col-lg-7 pb-5 pb-lg-0 px-3 px-lg-5">
+                <h4 class="text-secondary mb-3">Exploring the World of Insects</h4>
+                <h1 class="display-4 mb-4"><span class="text-primary">Discover</span> the Insect Kingdom</h1>
+                <h5 class="text-muted mb-3">Learn Fascinating Facts about Insects</h5>
+                <p class="mb-4">Did you know that insects are the most diverse group of animals on Earth, with
+                    over a million species identified? Insects play crucial roles in ecosystems, from pollinating
+                    flowers to
+                    decomposing organic matter. Explore the fascinating world of insects with us!</p>
+                <ul class="list-inline">
+                    <li>
+                        <h5><i class="fa fa-check-double text-secondary mr-3"></i>Discover Insect Habitats</h5>
+                    </li>
+                    <li>
+                        <h5><i class="fa fa-check-double text-secondary mr-3"></i>Learn about Insect Behavior</h5>
+                    </li>
+                    <li>
+                        <h5><i class="fa fa-check-double text-secondary mr-3"></i>Understand Insect Adaptations</h5>
+                    </li>
+                </ul>
+                <div class="container">
+                    <a style="background-color: #ED6436;border-color: #ED6436;" class="btn btn-google"
+                        href="https://play.google.com/store/apps/details?id=com.mmt.plantid" target="_blank"
+                        title="Google Play">Google Play</a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <!-- Replace the YouTube video iframe with your desired dimensions -->
+                <div style="width: 500px;">
+                    <!-- Replace the URL with your YouTube video URL -->
+                    <iframe width="450px" height="300px" src="https://www.youtube.com/embed/J0PkVfWq7Do"
+                        frameborder="10" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    <!-- Blog Start -->
+    <div class="container-fluid bg-light pt-5" id="blog">
+        <div class="container py-5">
+            <div class="d-flex flex-column text-center mb-5">
+                <h4 class="text-secondary mb-3"> Our Blog</h4>
+                <h1 class="display-4 m-0"><span class="text-primary">Updates</span> From Blog</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card mb-3 h-100 " style="max-width: 100%;">
+                        <img-card style="width: 100%;height: auto;" class="mat-ripple list-entry no-ripple"
+                            data-entry-index="0" type="issue" href="wildlife/insects-invertebrates/ladybirds">
+                            <img src="https://c02.purpledshub.com/uploads/sites/47/2024/03/Seven-spot-ladybird-3.jpg?w=300&amp;webp=1"
+                                alt="Seven spot ladybird" title="Seven spot ladybird"
+                                aria-label="What do ladybirds eat?" class="loaded card-img-top"
+                                style="max-width: 100%; height: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">What do ladybirds eat?</h5>
+                                <p class="card-text">What do ladybirds eat? Do ladybirds bite? How long do they
+                                    live?
+                                    And where do they live? Find out all about these spotted insects with our
+                                    expert
+                                    guide.</p>
+                                <a href="https://www.countryfile.com/wildlife/insects-invertebrates/ladybirds"
+                                    class="btn btn-primary">Read More</a>
+                            </div>
+                        </img-card>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card mb-3 h-100 " style="max-width: 100%;">
+                        <img-card style="width: 100%;height: auto;" class="mat-ripple list-entry no-ripple"
+                            data-entry-index="1" type="issue" href="news/bees-a-story-of-survival-exhibition">
+                            <img src="https://c02.purpledshub.com/uploads/sites/47/2024/02/Bees-A-Story-of-Survival.-Photo-by-Pete-Carr-Render-by-Battlecat-and-Wolfgang-Buttress-Studios.jpg?w=300&amp;webp=1"
+                                alt="Bees: A Story of Survival" title="Bees: A Story of Survival"
+                                aria-label="Stunning bee photographs shine light on the life (and death) of more than 20,000 species"
+                                class="loaded card-img-top" style="max-width: 100%; height: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">Stunning bee photographs shine light on the life (and
+                                    death) of
+                                    more than 20,000 species</h5>
+                                <p class="card-text">A provocative new exhibition aimed at highlighting the
+                                    existential
+                                    threat to thousands of bee species around the world is coming to the UK. We
+                                    look at
+                                    what to expect from 'Bees: A Story of Survival' through a series of
+                                    spectacular
+                                    images...</p>
+                                <a href="https://www.countryfile.com/news/bees-a-story-of-survival-exhibition"
+                                    class="btn btn-primary">Read More</a>
+                            </div>
+                        </img-card>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card mb-3 h-100 " style="max-width: 100%;">
+                        <img-card style="width: 100%;height: auto;" class="mat-ripple list-entry no-ripple"
+                            data-entry-index="2" type="issue" href="wildlife/insects-invertebrates/earthworm-facts">
+                            <img src="https://c02.purpledshub.com/uploads/sites/47/2024/01/Earth-worm-facts-scaled.jpg?w=300&amp;webp=1"
+                                alt="Earthworm facts" title="Earthworm facts"
+                                aria-label="All you need to know about earthworms, including why they are so good for our soil"
+                                class="loaded card-img-top" style="max-width: 100%; height: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">All you need to know about earthworms, including why they
+                                    are so
+                                    good for our soil</h5>
+                                <p class="card-text">There’s a lot more to earthworms than meets the eye says
+                                    Joanna
+                                    Carter. Here she explains how these little critters play a crucial role in
+                                    keeping
+                                    our soil healthy.</p>
+                                <a href="https://www.countryfile.com/wildlife/insects-invertebrates/earthworm-facts"
+                                    class="btn btn-primary">Read More</a>
+                            </div>
+                        </img-card>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card mb-3 h-100 " style="max-width: 100%;">
+                        <img-card style="width: 100%;height: auto;" class="mat-ripple list-entry no-ripple"
+                            data-entry-index="2" type="issue" href="wildlife/insects-invertebrates/earthworm-facts">
+                            <img src="https://c02.purpledshub.com/uploads/sites/47/2023/05/Stag-beetle-1a8d6ad.jpg?w=300&amp;webp=1"
+                                alt="Earthworm facts" title="Earthworm facts"
+                                aria-label="All you need to know about earthworms, including why they are so good for our soil"
+                                class="loaded card-img-top" style="max-width: 100%; height: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">British beetle guide: where to see and how to identify
+                                    these
+                                    fascinating insects</h5>
+                                <p class="card-text">From the striking rose chafer to the stag, beetles are a
+                                    fascinating group of insects found widely throughout the UK. Here is our
+                                    expert UK
+                                    beetle species guide, which explains how to identify and best places to spot
+                                    them.
+                                </p>
+                                <a href="https://www.countryfile.com/wildlife/insects-invertebrates/british-beetle-guide"
+                                    class="btn btn-primary">Read More</a>
+                            </div>
+                        </img-card>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card mb-3 h-100 " style="max-width: 100%;">
+                        <img-card style="width: 100%;height: auto;" class="mat-ripple list-entry no-ripple"
+                            data-entry-index="2" type="issue" href="wildlife/insects-invertebrates/earthworm-facts">
+                            <img src="https://c02.purpledshub.com/uploads/sites/47/2022/07/British-wasp-1c2a7b0.jpg?w=300&amp;webp=1"
+                                alt="Macro closeup of a common British wasp feeding on the herb Fennel."
+                                title="Macro closeup of a common British wasp feeding on the herb Fennel."
+                                aria-label="British wasp guide: how to identify common species, lifecycle and why wasps sting in autumn"
+                                class="loaded card-img-top" style="max-width: 100%; height: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">British wasp guide: how to identify common species,
+                                    lifecycle and
+                                    why wasps sting in autumn</h5>
+                                <p class="card-text">These stinging picnic pests don’t deserve our enmity
+                                    and fear – they are impressive architects that belong to highly developed
+                                    and
+                                    complex
+                                    societies – our expert guide to wasps looks at the common species, their
+                                    lifecycle
+                                    and why
+                                    wasps tend to sting in autumn
+                                </p>
+                                <a href="https://www.countryfile.com/wildlife/insects-invertebrates/british-wasp-guide-how-to-identify-common-species-lifecycle-and-why-wasps-sting-in-autumn"
+                                    class="btn btn-primary">Read More</a>
+                            </div>
+                        </img-card>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card mb-3 h-100 " style="max-width: 100%;">
+                        <img-card style="width: 100%;height: auto;" class="mat-ripple list-entry no-ripple"
+                            data-entry-index="2" type="issue"
+                            href="wildlife/insects-invertebrates/british-spider-guide-common-species-to-identify-and-where-to-find-them">
+                            <img src="https://c02.purpledshub.com/uploads/sites/47/2018/09/GettyImages-868271008-3a105dc.jpg?w=300&amp;webp=1"
+                                alt="Spider web lit up from behind by low lying sun"
+                                title="Spider web lit up from behind by low lying sun"
+                                aria-label="British spider guide - and why there are so many around"
+                                class="loaded card-img-top" style="max-width: 100%; height: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">British spider guide - and why there are so many around
+                                </h5>
+                                <p class="card-text">During autumn and winter you may notice an influx of
+                                    spiders appearing in your garden and home. Learn why this is, as well as how
+                                    long
+                                    they live,
+                                    what they eat and common UK species with our expert guide to British
+                                    spiders.
+                                </p>
+                                <a href="https://www.countryfile.com/wildlife/insects-invertebrates/british-spider-guide-common-species-to-identify-and-where-to-find-them"
+                                    class="btn btn-primary">Read More</a>
+                            </div>
+                        </img-card>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container" id="Gallery">
+        <div class="row">
+            <div class="col-12">
+                <!-- Section Heading -->
+                <div class="section-heading text-center">
+                    <h2>ScreenShots</h2>
+                    <p>Easy to use and friendly UI </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Single Product Area -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="100ms">
+                    <!-- Product Image -->
+                    <div class="product-img">
+                        <img src="img/gallery/screen0.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Product Area -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="200ms">
+                    <!-- Product Image -->
+                    <div class="product-img">
+                        <img src="img/gallery/screen1.webp" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Single Product Area -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="300ms">
+                    <!-- Product Image -->
+                    <div class="product-img">
+                        <img src="img/gallery/screen2.webp" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Single Product Area -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="400ms">
+                    <!-- Product Image -->
+                    <div class="product-img">
+                        <img src="img/gallery/screen3.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog end -->
+
+
+
+    <div class="container bg-wight" style="text-align: right; padding-top: 40px;padding-right: 0px;">
+        <a style="background-color: #ED6436;border-color: #ED6436;" class="btn btn-google"
+            href="https://play.google.com/store/apps/details?id=com.mmt.plantid" target="_blank"
+            title="Google Play">Google Play</a>
+    </div>
+    <!-- Footer Start -->
+
+    <div class="container-fluid text-white py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">
+                    &copy; <a class="text-white font-weight-bold" href="#">Insects website</a>. All Rights
+                    Reserved.
+                    Designed by
+                    <a class="text-white font-weight-bold" href="https://mobimartech.org/" target="_blank">MMT </a>
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+                <ul class="nav d-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Terms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer End -->
+    <!-- Back to Top -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
